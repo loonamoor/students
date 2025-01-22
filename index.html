@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+      <form action="" class="main-form" id="main-form">
+        <label class="label">
+          Фамилия*
+          <input type="text" class="main-input text-input" id="surname-input" placeholder="Фамилия">
+        </label>
+        <label class="label">
+          Имя*
+          <input type="text" class="main-input text-input" id="name-input" placeholder="Имя">
+        </label>
+        <label class="label">
+          Отчество*
+          <input type="text" class="main-input text-input" id="lastname-input" placeholder="Отчество">
+        </label>
+        <label class="label">
+          Дата рождения*
+          <input type="date" class="main-input date-input" id="birthday-input" placeholder="Дата рождения">
+        </label>
+        <label class="label">
+          Год начала обучения*
+          <input type="number" class="main-input number-input" id="studyStart-input" placeholder="2020">
+        </label>
+        <label class="label">
+          Факультет*
+          <input type="text" class="main-input text-input" id="faculty-input" placeholder="Факультет">
+        </label>
+        <div class="btn-group">
+          <div class="error-messages" id="error"></div>
+          <div class="btn-wrapper">
+            <button class="btn submit-btn" id="submit-btn">
+              Добавить дело
+            </button>
+            <span class="success-message" id="submit-success">
+              Дело добавлено!
+            </span>
+          </div>
+        </div>
+      </form>
+      <form action="#" class="filter-form" id="filter-form">
+        <label class="label" id="fio-label">
+          ФИО
+          <input type="text" class="filter-input" id="filter-fio">
+        </label>
+        <label class="label" id="faculty-label">
+          Факультет
+          <input type="text" class="filter-input" id="filter-faculty">
+        </label>
+        <label class="label" id="studyStart-label">
+          Год начала обучения
+          <input type="text" class="filter-input" id="filter-studyStart">
+        </label>
+        <label class="label" id="studyFinish-label">
+          Год окончания обучения
+          <input type="text" class="filter-input" id="filter-studyFinish">
+        </label>
+        <button class="btn filter-btn" id="filter-btn">Очистить</button>
+      </form>
+      <table class="table" id="table">
+        <thead class="thead">
+          <tr class="trow thead-row">
+            <th class="thead-title" id="fio-thead">ФИО студента</th>
+            <th class="thead-title" id="faculty-thead">Факультет</th>
+            <th class="thead-title" id="birthday-thead">Дата рождения и возраст</th>
+            <th class="thead-title" id="studyYears-thead">Годы обучения и номер курса</th>
+          </tr>
+        </thead>
+        <tbody class="tbody" id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+</body>
+
+</html>
